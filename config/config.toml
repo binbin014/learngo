@@ -1,0 +1,6 @@
+[database]
+    link="homestead:secret@(127.0.0.1:33060)/"
+[redis]
+    host=""
+[jwt]
+    signing-key="learngin"

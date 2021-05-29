@@ -1,0 +1,16 @@
+database:
+  link: "homestead:secret@(127.0.0.1:33060)/learngin?charset=utf8mb4&parseTime=True&loc=Local"
+redis:
+  host: ""
+jwt:
+  expires-at: 1 # 3600000000000秒 == 1天 默认设置为1天
+  refresh-at: 168 # 3600000000000秒 == 1天 , 24 * 7 = 168 刷新的token设置为一星期
+  signing-key: 'LearnGin'
+logger:
+  type: "file"
+  level: ""
+  path: "./log/"
+  filename: "app.log"
+  maxsize: 1024
+  max_age: 0
+  max_backups: 0
